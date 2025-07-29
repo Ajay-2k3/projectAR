@@ -51,3 +51,18 @@ export interface MapSearchResult {
   lon: string;
   place_id: string;
 }
+
+// types/index.ts
+export interface Location {
+  latitude: number;
+  longitude: number;
+}
+
+export interface POIMarker extends Location {
+  id: string;
+  name: string;
+  type?: string;
+  address?: string;
+  description?: string;
+  imageUrl?: string;
+}
